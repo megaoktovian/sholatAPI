@@ -10,4 +10,6 @@ public interface MainView {
     void onError(String errorMessage);
 
     void onFailure(String failureMessage);
+
+    void detail(DataItem dataItem);
 }

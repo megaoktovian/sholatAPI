@@ -8,5 +8,7 @@ import retrofit2.http.Query;
 
 public interface ApiService {
     @GET("/v1/calendarByAddress")
-    Call<SholatResponse> getSholat();
+    Call<SholatResponse> getSholat(@Query("address")String address, @Query("method") String method, @Query("month") String month,
+                                   @Query("year") String year);
+
 }

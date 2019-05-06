@@ -1,88 +1,86 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:layout_margin="15dp"
     tools:context=".view.ItemDetail"
-    android:orientation="vertical">
-    <android.support.v7.widget.CardView
+    android:background="#D8D0B7">
+    <TextView
+        android:id="@+id/yogya"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-        <RelativeLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="#C1A12E">
-            <TextView
-                android:layout_marginTop="5dp"
-                android:id="@+id/date"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:maxLines="2"
-                android:textColor="@android:color/white"
-                android:textSize="24sp"
-                android:textStyle="bold"
-                tools:text="Date : " />
-            <TextView
-                android:id="@+id/meta"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:layout_below="@id/date"
-                android:maxLines="2"
-                android:textColor="@android:color/white"
-                android:textSize="24sp"
-                android:textStyle="bold"
-                tools:text="Meta : " />
-            <TextView
-                android:id="@+id/timings"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:layout_below="@id/meta"
-                android:maxLines="2"
-                android:textColor="@android:color/white"
-                android:textSize="24sp"
-                android:textStyle="bold"
-                tools:text="Timings : " />
-            <TextView
-                android:layout_toRightOf="@id/date"
-                android:id="@+id/tv_date"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:maxLines="2"
-                android:textColor="@android:color/white"
-                android:textSize="24sp"
-                android:textStyle="bold"
-                tools:text="Date " />
-            <TextView
-                android:id="@+id/tv_meta"
-                android:layout_toRightOf="@id/meta"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:layout_below="@id/tv_date"
-                android:maxLines="2"
-                android:textColor="@android:color/white"
-                android:textSize="24sp"
-                android:textStyle="bold"
-                tools:text="Meta " />
-            <TextView
-                android:id="@+id/tv_timings"
-                android:layout_toRightOf="@id/timings"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_margin="8dp"
-                android:layout_below="@id/tv_meta"
-                android:maxLines="2"
-                android:textColor="@android:color/white"
-                android:textSize="24sp"
-                android:textStyle="bold"
-                tools:text="Timings " />
+        android:layout_height="wrap_content"
+        android:text="Yogyakarta"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:fontFamily="times"
+        android:textSize="30dp"/>
+    <TextView
+
+        android:textStyle="bold"
+        android:fontFamily="times"
+        android:layout_marginTop="35dp"
+        android:id="@+id/tvdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="asd"
+        android:textAlignment="center"
+        android:textColor="#483c32"
+        android:textSize="40dp"/>
 
 
-        </RelativeLayout>
-    </android.support.v7.widget.CardView>
+    <TextView
+        android:layout_marginTop="40dp"
+        android:id="@+id/tvshubuh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="asd"
+        android:fontFamily="times"
+        android:textAlignment="center"
+        android:textColor="#483c32"
+        android:textSize="30sp"
+        android:layout_marginBottom="15dp"/>
+    <TextView
+        android:id="@+id/tvdhuhur"
+        android:fontFamily="times"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="asd"
+        android:textAlignment="center"
+        android:textColor="#483c32"
+        android:textSize="30sp"
+        android:layout_marginBottom="15dp"/>
+    <TextView
+        android:fontFamily="times"
+        android:id="@+id/tvashar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="asd"
+        android:textAlignment="center"
+        android:textColor="#483c32"
+        android:textSize="30sp"
+        android:layout_marginBottom="15dp"/>
+    <TextView
+        android:fontFamily="times"
+        android:id="@+id/tvmaghrib"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="asd"
+        android:textAlignment="center"
+        android:textColor="#483c32"
+        android:textSize="30sp"
+        android:layout_marginBottom="15dp"/>
+    <TextView
+        android:fontFamily="times"
+        android:id="@+id/tvisya"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="asd"
+        android:textAlignment="center"
+        android:textColor="#483c32"
+        android:textSize="30sp"
+        android:layout_marginBottom="15dp"/>
+
+
 </LinearLayout>

@@ -7,25 +7,35 @@ import android.widget.TextView;
 import com.example.sholatapi.R;
 
 public class ItemDetail extends AppCompatActivity {
-    private TextView tv_date;
-    private TextView tv_meta;
-    private TextView tv_timings;
-    private String a,b,c;
+    private TextView tvDate,tvShubuh,tvAshar,tvDhuhur,tvMaghrib,tvIsya;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_item_detail);
-        tv_date = findViewById(R.id.tv_date);
-        tv_meta = findViewById(R.id.tv_meta);
-        tv_timings = findViewById(R.id.tv_timings);
+        tvDate = findViewById(R.id.tv_date);
+        tvShubuh = findViewById(R.id.tv_shubuh);
+        tvDhuhur = findViewById(R.id.tv_dhuhur);
+        tvAshar = findViewById(R.id.tv_ashar);
+        tvMaghrib = findViewById(R.id.tv_maghrib);
+        tvIsya = findViewById(R.id.tv_isya);
 
-        a = getIntent().getStringExtra("date");
-        b = getIntent().getStringExtra("meta");
-        c = getIntent().getStringExtra("timings");
+        String date = getIntent().getStringExtra("date");
+        String shubuh = getIntent().getStringExtra("shubuh");
+        String dhuhur = getIntent().getStringExtra("dhuhur");
+        String ashar = getIntent().getStringExtra("ashar");
+        String maghrib = getIntent().getStringExtra("maghrib");
+        String isya = getIntent().getStringExtra("isya");
 
-        tv_date.setText(a);
-        tv_meta.setText(b);
-        tv_timings.setText(c);
+
+
+        tvDate.setText(date);
+        tvShubuh.setText(shubuh);
+        tvDhuhur.setText(dhuhur);
+        tvAshar.setText(ashar);
+        tvMaghrib.setText(maghrib);
+        tvIsya.setText(isya);
+
 
     }
 }

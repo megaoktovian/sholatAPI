@@ -17,8 +17,8 @@ public class MainPresenter {
         this.context = context;
         this.mainView = mainView;
     }
-    public void loadSholat(){
-        BaseApp.service.getSholat().enqueue(new Callback<SholatResponse>() {
+    public void loadSholat(String address, String method, String month, String year){
+        BaseApp.service.getSholat( address,  method,  month, year).enqueue(new Callback<SholatResponse>() {
             @Override
             public void onResponse(Call<SholatResponse> call, Response<SholatResponse> response) {
                 if (response.isSuccessful()){
